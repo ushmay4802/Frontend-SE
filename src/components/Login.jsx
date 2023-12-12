@@ -13,7 +13,7 @@ const Login = () => {
   const { setUserInfo } = useUser();
   const navigate = useNavigate();
   const handleLogin = async () => {
-    if (usernamein.length > 12 || usernamein.length < 5) {
+    if (usernamein.length > 20 || usernamein.length < 5) {
       setError("username should be 5 to 12 character");
       return;
     }
